@@ -9,7 +9,7 @@ body{
 }
 
 #main{
-    min-width: 340px;
+    min-width: 360px;
     max-width: 768px;
     margin: auto;
     padding: 1rem;
