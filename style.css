@@ -5,43 +5,39 @@
 }
 
 body{
-    font-size: 100%;
     background-color: antiquewhite;
 }
 
-#intro{
-    margin: 0;
-    width: auto;
-    display: flex;
-    border: solid grey 5px;
-    background: antiquewhite;
-    justify-content: center;
+#main{
+    min-width: 360px;
+    max-width: 768px;
+    margin: auto;
+    padding: 1rem;
 }
 
 #img-div{
     text-align: center;
-    width: 46%;
-    border-right: solid grey 5px;
+    margin: auto;
 }
 
 #image{
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
 }
 
 #tribute-heading{
-    border-bottom: solid grey 5px;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
 #tribute-info{
-    width: 54%;
-    padding: 1em;
-    text-align: justify;
     line-height: 1.5;
-    font-size: 21px;
+    font-size: 1.22rem;
 }
 
 a:hover{
@@ -49,28 +45,29 @@ a:hover{
 }
 
 td{
-    padding-right: 10px;
-    padding-bottom: 25px;
+    padding: 1rem 1rem;
+    text-align: left;
 }
 
-@media (max-width:1400px){
-    #intro{
-        flex-direction: column;
-    }
+p, a{
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+a{
+    font-style: italic;
+}
+
+h2{
+    padding-top: 2rem;
+}
+
+@media (max-width:1000px){
     #tribute-heading{
-        font-size: 21px;
+        font-size: 1.8rem;
         border-left: none;
     }
     #tribute-info{
-        font-size: 14px;
-    }
-    #tribute-heading{
-        border: none;
-    }
-    #image{
-        border: none;
-    }
-    #img-div{
-        border-right: none;
+        font-size: 1rem;
     }
 }
